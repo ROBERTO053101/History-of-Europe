@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harta Interactivă - MAP OF WW1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://i.ibb.co">
+    <link rel="dns-prefetch" href="//i.ibb.co">
+</head>
+<body class="map-page">
+    <div class="map-container">
+        <h1 id="year-title">1900</h1>
+        
+        <div class="year-search">
+            <input type="number" id="yearInput" min="1900" max="2000" placeholder="Introduceți anul (1900-2000)" class="year-input">
+            <button id="searchBtn">Caută</button>
+        </div>
+        
+        <div class="map-frame">
+            <div class="map-slider">
+                <!-- Hărți de la 0 la 100 reprezentând anii 1900-2000 -->
+                <img src="images/0.jpg" alt="Harta din 1900" class="historical-map active" data-year="1900" loading="eager" fetchpriority="high">
+                <img src="images/1.jpg" alt="Harta din 1901" class="historical-map" data-year="1901" loading="eager">
+                <img src="images/2.jpg" alt="Harta din 1902" class="historical-map" data-year="1902" loading="eager">
+                <img src="images/3.jpg" alt="Harta din 1903" class="historical-map" data-year="1903" loading="eager">
+                <img src="images/4.jpg" alt="Harta din 1904" class="historical-map" data-year="1904" loading="eager">
+                <img src="images/5.jpg" alt="Harta din 1905" class="historical-map" data-year="1905" loading="eager">
+                <img src="images/6.jpg" alt="Harta din 1906" class="historical-map" data-year="1906" loading="eager">
+                <img src="images/7.jpg" alt="Harta din 1907" class="historical-map" data-year="1907" loading="eager">
+                <img src="images/8.jpg" alt="Harta din 1908" class="historical-map" data-year="1908" loading="eager">
+                <img src="images/9.jpg" alt="Harta din 1909" class="historical-map" data-year="1909" loading="eager">
+                <img src="images/10.jpg" alt="Harta din 1910" class="historical-map" data-year="1910" loading="eager">
+                <img src="images/11.jpg" alt="Harta din 1911" class="historical-map" data-year="1911" loading="eager">
+                <img src="images/12.jpg" alt="Harta din 1912" class="historical-map" data-year="1912" loading="eager">
+                <img src="images/13.jpg" alt="Harta din 1913" class="historical-map" data-year="1913" loading="eager">
+                <img src="images/14.jpg" alt="Harta din 1914" class="historical-map" data-year="1914" loading="eager">
+                <img src="images/15.jpg" alt="Harta din 1915" class="historical-map" data-year="1915" loading="eager">
+                <img src="images/16.jpg" alt="Harta din 1916" class="historical-map" data-year="1916" loading="eager">
+                <img src="images/17.jpg" alt="Harta din 1917" class="historical-map" data-year="1917" loading="eager">
+                <img src="images/18.jpg" alt="Harta din 1918" class="historical-map" data-year="1918" loading="eager">
+                <img src="images/19.jpg" alt="Harta din 1919" class="historical-map" data-year="1919" loading="eager">
+                <img src="images/20.jpg" alt="Harta din 1920" class="historical-map" data-year="1920" loading="eager">
+                <img src="images/21.jpg" alt="Harta din 1921" class="historical-map" data-year="1921" loading="eager">
+                <img src="images/22.jpg" alt="Harta din 1922" class="historical-map" data-year="1922" loading="eager">
+                <img src="images/23.jpg" alt="Harta din 1923" class="historical-map" data-year="1923" loading="eager">
+                <img src="images/24.jpg" alt="Harta din 1924" class="historical-map" data-year="1924" loading="eager">
+                <img src="images/25.jpg" alt="Harta din 1925" class="historical-map" data-year="1925" loading="eager">
+                <img src="images/26.jpg" alt="Harta din 1926" class="historical-map" data-year="1926" loading="eager">
+                <img src="images/27.jpg" alt="Harta din 1927" class="historical-map" data-year="1927" loading="eager">
+                <img src="images/28.jpg" alt="Harta din 1928" class="historical-map" data-year="1928" loading="eager">
+                <img src="images/29.jpg" alt="Harta din 1929" class="historical-map" data-year="1929" loading="eager">
+                <img src="images/30.jpg" alt="Harta din 1930" class="historical-map" data-year="1930" loading="eager">
+                <img src="images/31.jpg" alt="Harta din 1931" class="historical-map" data-year="1931" loading="eager">
+                <img src="images/32.jpg" alt="Harta din 1932" class="historical-map" data-year="1932" loading="eager">
+                <img src="images/33.jpg" alt="Harta din 1933" class="historical-map" data-year="1933" loading="eager">
+                <img src="images/34.jpg" alt="Harta din 1934" class="historical-map" data-year="1934" loading="eager">
+                <img src="images/35.jpg" alt="Harta din 1935" class="historical-map" data-year="1935" loading="eager">
+                <img src="images/36.jpg" alt="Harta din 1936" class="historical-map" data-year="1936" loading="eager">
+                <img src="images/37.jpg" alt="Harta din 1937" class="historical-map" data-year="1937" loading="eager">
+                <img src="images/38.jpg" alt="Harta din 1938" class="historical-map" data-year="1938" loading="eager">
+                <img src="images/39.jpg" alt="Harta din 1939" class="historical-map" data-year="1939" loading="eager">
+                <img src="images/40.jpg" alt="Harta din 1940" class="historical-map" data-year="1940" loading="eager">
+                <img src="images/41.jpg" alt="Harta din 1941" class="historical-map" data-year="1941" loading="eager">
+                <img src="images/42.jpg" alt="Harta din 1942" class="historical-map" data-year="1942" loading="eager">
+                <img src="images/43.jpg" alt="Harta din 1943" class="historical-map" data-year="1943" loading="eager">
+                <img src="images/44.jpg" alt="Harta din 1944" class="historical-map" data-year="1944" loading="eager">
+                <img src="images/45.jpg" alt="Harta din 1945" class="historical-map" data-year="1945" loading="eager">
+                <img src="images/46.jpg" alt="Harta din 1946" class="historical-map" data-year="1946" loading="eager">
+                <img src="images/47.jpg" alt="Harta din 1947" class="historical-map" data-year="1947" loading="eager">
+                <img src="images/48.jpg" alt="Harta din 1948" class="historical-map" data-year="1948" loading="eager">
+                <img src="images/49.jpg" alt="Harta din 1949" class="historical-map" data-year="1949" loading="eager">
+                <img src="images/50.jpg" alt="Harta din 1950" class="historical-map" data-year="1950" loading="eager">
+                <img src="images/51.jpg" alt="Harta din 1951" class="historical-map" data-year="1951" loading="eager">
+                <img src="images/52.jpg" alt="Harta din 1952" class="historical-map" data-year="1952" loading="eager">
+                <img src="images/53.jpg" alt="Harta din 1953" class="historical-map" data-year="1953" loading="eager">
+                <img src="images/54.jpg" alt="Harta din 1954" class="historical-map" data-year="1954" loading="eager">
+                <img src="images/55.jpg" alt="Harta din 1955" class="historical-map" data-year="1955" loading="eager">
+                <img src="images/56.jpg" alt="Harta din 1956" class="historical-map" data-year="1956" loading="eager">
+                <img src="images/57.jpg" alt="Harta din 1957" class="historical-map" data-year="1957" loading="eager">
+                <img src="images/58.jpg" alt="Harta din 1958" class="historical-map" data-year="1958" loading="eager">
+                <img src="images/59.jpg" alt="Harta din 1959" class="historical-map" data-year="1959" loading="eager">
+                <img src="images/60.jpg" alt="Harta din 1960" class="historical-map" data-year="1960" loading="eager">
+                <img src="images/61.jpg" alt="Harta din 1961" class="historical-map" data-year="1961" loading="eager">
+                <img src="images/62.jpg" alt="Harta din 1962" class="historical-map" data-year="1962" loading="eager">
+                <img src="images/63.jpg" alt="Harta din 1963" class="historical-map" data-year="1963" loading="eager">
+                <img src="images/64.jpg" alt="Harta din 1964" class="historical-map" data-year="1964" loading="eager">
+                <img src="images/65.jpg" alt="Harta din 1965" class="historical-map" data-year="1965" loading="eager">
+                <img src="images/66.jpg" alt="Harta din 1966" class="historical-map" data-year="1966" loading="eager">
+                <img src="images/67.jpg" alt="Harta din 1967" class="historical-map" data-year="1967" loading="eager">
+                <img src="images/68.jpg" alt="Harta din 1968" class="historical-map" data-year="1968" loading="eager">
+                <img src="images/69.jpg" alt="Harta din 1969" class="historical-map" data-year="1969" loading="eager">
+                <img src="images/70.jpg" alt="Harta din 1970" class="historical-map" data-year="1970" loading="eager">
+                <img src="images/71.jpg" alt="Harta din 1971" class="historical-map" data-year="1971" loading="eager">
+                <img src="images/72.jpg" alt="Harta din 1972" class="historical-map" data-year="1972" loading="eager">
+                <img src="images/73.jpg" alt="Harta din 1973" class="historical-map" data-year="1973" loading="eager">
+                <img src="images/74.jpg" alt="Harta din 1974" class="historical-map" data-year="1974" loading="eager">
+                <img src="images/75.jpg" alt="Harta din 1975" class="historical-map" data-year="1975" loading="eager">
+                <img src="images/76.jpg" alt="Harta din 1976" class="historical-map" data-year="1976" loading="eager">
+                <img src="images/77.jpg" alt="Harta din 1977" class="historical-map" data-year="1977" loading="eager">
+                <img src="images/78.jpg" alt="Harta din 1978" class="historical-map" data-year="1978" loading="eager">
+                <img src="images/79.jpg" alt="Harta din 1979" class="historical-map" data-year="1979" loading="eager">
+                <img src="images/80.jpg" alt="Harta din 1980" class="historical-map" data-year="1980" loading="eager">
+                <img src="images/81.jpg" alt="Harta din 1981" class="historical-map" data-year="1981" loading="eager">
+                <img src="images/82.jpg" alt="Harta din 1982" class="historical-map" data-year="1982" loading="eager">
+                <img src="images/83.jpg" alt="Harta din 1983" class="historical-map" data-year="1983" loading="eager">
+                <img src="images/84.jpg" alt="Harta din 1984" class="historical-map" data-year="1984" loading="eager">
+                <img src="images/85.jpg" alt="Harta din 1985" class="historical-map" data-year="1985" loading="eager">
+                <img src="images/86.jpg" alt="Harta din 1986" class="historical-map" data-year="1986" loading="eager">
+                <img src="images/87.jpg" alt="Harta din 1987" class="historical-map" data-year="1987" loading="eager">
+                <img src="images/88.jpg" alt="Harta din 1988" class="historical-map" data-year="1988" loading="eager">
+                <img src="images/89.jpg" alt="Harta din 1989" class="historical-map" data-year="1989" loading="eager">
+                <img src="images/90.jpg" alt="Harta din 1990" class="historical-map" data-year="1990" loading="eager">
+                <img src="images/91.jpg" alt="Harta din 1991" class="historical-map" data-year="1991" loading="eager">
+                <img src="images/92.jpg" alt="Harta din 1992" class="historical-map" data-year="1992" loading="eager">
+                <img src="images/93.jpg" alt="Harta din 1993" class="historical-map" data-year="1993" loading="eager">
+                <img src="images/94.jpg" alt="Harta din 1994" class="historical-map" data-year="1994" loading="eager">
+                <img src="images/95.jpg" alt="Harta din 1995" class="historical-map" data-year="1995" loading="eager">
+                <img src="images/96.jpg" alt="Harta din 1996" class="historical-map" data-year="1996" loading="eager">
+                <img src="images/97.jpg" alt="Harta din 1997" class="historical-map" data-year="1997" loading="eager">
+                <img src="images/98.jpg" alt="Harta din 1998" class="historical-map" data-year="1998" loading="eager">
+                <img src="images/99.jpg" alt="Harta din 1999" class="historical-map" data-year="1999" loading="eager">
+                <img src="images/100.jpg" alt="Harta din 2000" class="historical-map" data-year="2000" loading="eager">
+            </div>
+            
+            <div class="slider-container">
+                <input type="range" min="0" max="100" value="0" step="1" class="year-slider" id="yearSlider">
+                <div class="slider-labels">
+                    <span>1900</span>
+                    <span>1925</span>
+                    <span>1950</span>
+                    <span>1975</span>
+                    <span>2000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

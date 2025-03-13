@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY OF EUROPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://i.postimg.cc">
+</head>
+<body class="main-page">
+    <!-- Language selector button -->
+    <div class="language-selector">
+        <button id="languageButton" data-translate="language">Limbă</button>
+        <div class="language-dropdown">
+            <a href="#" data-lang="ro">Română</a>
+            <a href="#" data-lang="en">English</a>
+            <a href="#" data-lang="fr">Français</a>
+        </div>
+    </div>
+    
+    <!-- Profile button -->
+    <div class="profile-button-container">
+        <button id="profileButton" data-translate="profile">Profil</button>
+    </div>
+
+    <div class="main-container">
+        <h1 data-translate="mainWelcome">Bun venit pe <span>HISTORY OF EUROPE</span></h1>
+        <div class="categories-container">
+            <div class="category-box">
+                <h2 data-translate="exploreHistory">Explorează Istoria Europei</h2>
+                <div class="buttons-container">
+                    <a href="map.html" class="menu-button">
+                        <button data-translate="interactiveMap">Hartă interactivă</button>
+                   </a>
+                    <a href="leaders.html" class="menu-button">
+                        <button data-translate="leaders">Conducătorii secolului 20</button>
+                    </a>
+                    <a href="events.html" class="menu-button">
+                        <button data-translate="majorEvents">Evenimente majore</button>
+                    </a>
+                    <a href="alliances.html" class="menu-button">
+                        <button data-translate="alliances">Alianțe și organizații</button>
+                    </a>
+                    <a href="borders.html" class="menu-button">
+                        <button data-translate="borders">Evoluția granițelor</button>
+                    </a>
+                    <a href="culture.html" class="menu-button">
+                        <button data-translate="culture">Cultură și societate</button>
+                    </a>
+                    <a href="economy.html" class="menu-button">
+                        <button data-translate="economy">Economie și industrie</button>
+                    </a>
+                    <a href="technology.html" class="menu-button">
+                        <button data-translate="technology">Tehnologie și știință</button>
+                    </a>
+                    <a href="regimes.html" class="menu-button">
+                        <button data-translate="regimes">Regimuri politice</button>
+                    </a>
+                </div>
+                <div class="quiz-container">
+                    <button class="quiz-start">Începe testul</button>
+                    <div class="quiz-content"></div>
+                </div>
+                
+                <!-- About application button -->
+                <div class="about-button-container">
+                    <a href="#" id="aboutButton" class="menu-button">
+                        <button data-translate="aboutApp">Despre aplicație</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About application modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-translate="aboutApp">Despre aplicație</h2>
+            <p>History of Europe</p>
+            <p>Nume: Olaru Dumitru Roberto</p>
+            <p>CNMB</p>
+            <p>profesor coordonator: Siiulescu Lacramioara</p>
+            <p>profesor coordonator: Bulat Florin</p>
+        </div>
+    </div>
+    
+    <!-- Profile modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal-profile">&times;</span>
+            <h2 data-translate="myProfile">Profilul meu</h2>
+            <div class="profile-info">
+                <div class="profile-pic-container">
+                    <img id="profilePicDisplay" src="" alt="Poza de profil">
+                </div>
+                <div class="profile-details">
+                    <p><strong data-translate="name">Nume</strong>: <span id="profileName"></span></p>
+                    <p><strong data-translate="email">Email</strong>: <span id="profileEmail"></span></p>
+                </div>
+            </div>
+            <div class="profile-progress">
+                <h3 data-translate="myProgress">Progresul meu</h3>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p><span id="progressPercent">0</span>% <span data-translate="completed">completat</span></p>
+                <div class="progress-details">
+                    <p><span data-translate="visitedPages">Pagini vizitate</span>: <span id="visitedPages">0</span>/9</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

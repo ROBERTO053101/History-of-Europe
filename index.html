@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HISTORY OF EUROPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://i.postimg.cc">
+</head>
+<body 
+class="login-page">
+    <div class="language-selector">
+        <button id="languageButton">Limbă</button>
+        <div class="language-dropdown">
+            <a href="#" data-lang="ro">Română</a>
+            <a href="#" data-lang="en">English</a>
+            <a href="#" data-lang="fr">Français</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="welcome-message" data-translate="welcome">Bun venit pe History of Europe</h2>
+        <form id="registerForm">
+            <div class="profile-pic-selection">
+                <h3 data-translate="profilePicture">Selectează poza de profil</h3>
+                <div class="avatar-options">
+                    <div class="avatar-option">
+                        <input type="radio" id="avatar1" name="profilePic" value="avatar1.jpg" checked>
+                        <label for="avatar1"><img src="images/avatar11.jpg" alt="Avatar 1"></label>
+                    </div>
+                    <div class="avatar-option">
+                        <input type="radio" id="avatar2" name="profilePic" value="avatar2.jpg">
+                        <label for="avatar2"><img src="images/avatar21.jpg" alt="Avatar 2"></label>
+                    </div>
+                    <div class="avatar-option">
+                        <input type="radio" id="avatar3" name="profilePic" value="avatar3.jpg">
+                        <label for="avatar3"><img src="images/avatar31.jpg" alt="Avatar 3"></label>
+                    </div>
+                    <div class="avatar-option">
+                        <input type="radio" id="avatar4" name="profilePic" value="avatar4.jpg">
+                        <label for="avatar4"><img src="images/avatar41.jpg" alt="Avatar 4"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" data-translate="name">Nume</label>
+                <input type="text" id="name" required placeholder="Introduceți numele">
+            </div>
+            <div class="form-group">
+                <label for="email" data-translate="email">Email</label>
+                <input type="email" id="email" required placeholder="Introduceți email-ul">
+            </div>
+            <button type="submit" data-translate="register">Înregistrare</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
